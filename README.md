@@ -25,6 +25,40 @@ Ajuste de dias para previsão e épocas de treinamento
 
 Opção para visualizar tabela de features
 
+#### **Aba "Resultados"**
+
+- Após a análise, os gráficos serão exibidos um abaixo do outro (um por grupo).
+
+- **Cada gráfico contém**:
+
+- **Linha Azul**: Dados históricos.
+
+- **Linha Vermelha Tracejada**: Previsão ARIMA para o futuro, com intervalo de confiança em rosa.
+
+- **Ponto Verde**: Previsão do Perceptron para o próximo período.
+
+#### **Interpretando os Resultados**
+
+- **ARIMA**: Modelo estatístico para séries temporais. A previsão é uma extrapolação baseada em padrões históricos.
+
+- **Perceptron**: Rede neural que usa features derivadas dos dados e da previsão ARIMA para prever o retorno do próximo período.
+
+#### **Recursos Adicionais**
+
+- **Tabela de Features**: Se marcada, uma janela mostrará as features usadas pelo Perceptron (para entender o que o modelo considerou).
+
+- **Zoom e Navegação**: Use os controles do matplotlib para zoom e pan nos gráficos.
+
+### Exemplo de Dados:
+
+Seu arquivo Excel deve ter pelo menos:
+
+- Uma coluna de datas (reconhecível como data)
+
+- Uma coluna numérica (valores a serem previstos)
+
+- Uma coluna de grupos (para segmentação)
+
 ---
 
 Análise Híbrida:
